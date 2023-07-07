@@ -112,7 +112,7 @@ if (isset($_POST['submitbtn'])) {
   <!-- Navigation -->
 
   <div id="nav">
-    <img src="images/tennisgoatslogo.png" alt="tennis-goats-logo" />
+    <img onclick="window.location.href=''" src="images/tennisgoatslogo.png" alt="tennis-goats-logo" />
     <a  onclick="window.location.href='#form-card'">Create Profile</a>
   </div>
   <div class="body-cards">
