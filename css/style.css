@@ -1,0 +1,207 @@
+#nav > img {
+  width: 25%;
+  margin: 10px;
+}
+#nav > a {
+  text-decoration: none;
+  color: #d7eb5a;
+  margin: 10px;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+}
+.intro-card {
+  background-image: url("../images/racketandball.jpeg");
+  font-family: "Open Sans", sans-serif;
+  background-size: 100% 100%;
+  height: 50em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border:10px solid white; */
+}
+.intro-card > h2 {
+  color: #d7eb5a;
+  font-weight: bold;
+}
+.intro-card > h4 {
+  color: #d7eb5a;
+}
+.intro-card > button, .btn-wrapper > input {
+  background-color: #29323d;
+  color: #d7eb5a;
+  padding: 10px;
+  font-weight: bold;
+}
+.server-card {
+  background-color: #d7eb5a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  color: #3b4754;
+  text-align: center;
+}
+#serve-row {
+  width: 95vw;
+  border: 2px solid #3b4754;
+  display: none;
+  /* justify-content: center; */
+}
+
+#serve-row > .server-img {
+  width: 50%;
+  /* display:none; */
+  animation: 5s forwards .1s serveranim;
+}
+.court-img {
+  /* width: 47.5vw;
+  position: absolute;
+  height: 66%; */
+  /* display: block; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* min-height: 100%;
+  min-width: 100%; */
+  width:100%;
+  height:100%;
+  transform: translate(-50%, -50%);
+}
+.court-and-ball {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  /* border: 2px solid brown; */
+  width: 47.7vw;
+  /* height: 150px; */
+  position: relative;
+  /* display: inline-block; */
+  overflow: hidden;
+  margin: 0;
+}
+.ball-img, #ball-text {
+  width: 50%;
+  position: absolute;
+  /* align-self: center;
+  justify-self: center; */
+  animation: 5s linear 0.1s ballhit;
+}
+@keyframes serveranim {
+    0%{
+        opacity: 1;
+        /* transform: rotateX(90deg); */
+      }
+      50%{
+        opacity: 1;
+        /* transform: rotateX(0deg); */
+      }
+      95% {
+        opacity:1;
+      }
+      100%{
+        display: none;
+        opacity: 0;
+        /* transform: rotateX(90deg); */
+      }
+  }
+@keyframes ballhit {
+  0% {
+    width: 0%;
+    font-size:0;
+    margin-left: 300px;
+  }
+  25% {
+    width: 0%;
+    font-size:0;
+    margin-left: 0px;
+  }
+  50% {
+    width: 0%;
+    font-size:0;
+    margin-left: -300px;
+  }
+  75% {
+    width: 90%;
+    margin-left: -200px;
+  }
+  85% {
+    width: 65%;
+    margin-left: 200px;
+  }
+  100% {
+    width: 50%;
+    margin-left: 0px;
+  }
+}
+#buttons-card {
+  /* border: 2px solid gold; */
+  /* height: 10em; */
+  background-color: #d7eb5a;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between
+}
+.btn-row {
+    /* border:2px solid purple; */
+    display:flex;
+    /* justify-content: space-between; */
+    background-color: #d7eb5a;
+}
+.btn-row > form {
+     width:50em;
+    height:15em;
+}
+.goat-btn {
+    /* width:50em;
+    height:20em; */
+    margin:10px;
+    background-color: #334400;
+}
+.btn-text {
+    background-color: #d7eb5a;
+    border: 2px solid #29323d;
+    color: #29323d;
+}
+.ball-btn-img {
+    margin-top:5px;
+    width:10em;
+}
+.form-card {
+    height: 30em;
+    border: 2px solid green;
+    background-color:black;
+    justify-self: end;
+    text-align:center;
+    color: #d7eb5a;
+}
+.body-cards {
+    display:flex;
+    flex-direction: column;
+    border:5px solid green;
+    height:100em;
+}
+.form-columns {
+    display:flex;
+    justify-content: center;
+}
+.field {
+    display:flex;
+    justify-content: space-between;
+    border:none;
+    margin:20px;
+}
+.field-label {
+    margin-right:10px;
+    font-family: "Open Sans", sans-serif;
+}
+.form-header {
+    margin-top:20px;
+    font-family: "Open Sans", sans-serif;
+}
