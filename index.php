@@ -113,7 +113,7 @@ if (isset($_POST['submitbtn'])) {
 
   <div id="nav">
     <img src="images/tennisgoatslogo.png" alt="tennis-goats-logo" />
-    <a href="#create-profile">Create Profile</a>
+    <a  onclick="window.location.href='#form-card'">Create Profile</a>
   </div>
   <div class="body-cards">
     <div class="intro-card">
@@ -226,7 +226,7 @@ if (isset($_POST['submitbtn'])) {
         </button>
       </div>
     </div>
-    <div class="form-card">
+    <div id="form-card">
       <div class="form-header">
         <h2>Create a Profile</h2>
       </div>
@@ -280,12 +280,6 @@ if (isset($_POST['submitbtn'])) {
       </div>
     </div>
   </div>
-  <p><b>Start typing a name in the input field below:</b></p>
-  <form action="">
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname" onkeyup="showHint(this.value)">
-  </form>
-  <p>Suggestions: <span id="txtHint"></span></p>
 </body>
 
 
